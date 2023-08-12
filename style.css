@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    cursor:none;
+    height: 500vh;
+}
+
+.custom-cursor{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    pointer-events: none;
+    z-index: 99999;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.custom-cursor-before{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition:.2s ease;
+    opacity: 1;
+
+}
